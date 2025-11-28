@@ -8,8 +8,8 @@
     <i>Il manque encore des textes de destination ! Vous pouvez contribuer sur <a href=https://github.com/MonsieurOuiplala/genegirouette-MF77/>GitHub</a>.</i>
     <button onclick="genererGirouette()">Générer</button>
     <div style="margin-top: 20px;">
-        <div id="haut" style="padding: 1px; margin: 0; height: 14px; width: 115px; font-size: 16px; font-weight: bold; display: flex; align-items: center; justify-content: center; border: 1px solid black; font-family: 'Courier New', monospace; letter-spacing: -1.8px;"></div>
-        <div id="bas" style="padding: 1px; margin: 0; height: 14px; width: 115px; font-size: 16px; font-weight: bold; display: flex; align-items: center; justify-content: center; border: 1px solid black; border-top: none; font-family: 'Courier New', monospace; letter-spacing: -1.8px;"></div>
+        <div id="haut" style="padding: 1px; margin: 0; height: 14px; width: 115px; font-size: 16px; font-weight: bold; display: flex; align-items: center; justify-content: center; border: 1px solid black; font-family: 'Courier New', monospace; letter-spacing: -2px;"></div>
+        <div id="bas" style="padding: 1px; margin: 0; height: 14px; width: 115px; font-size: 16px; font-weight: bold; display: flex; align-items: center; justify-content: center; border: 1px solid black; border-top: none; font-family: 'Courier New', monospace; letter-spacing: -2px;"></div>
     </div>
     <script>
         const girouettes={
@@ -28,7 +28,9 @@
                 {t:"PORTE DE LA",c:"#25303b"},
                 {t:"LOUIS",c:"#25303b"},
                 {t:"CHARENTON",c:"#25303b"},
-                {t:"LE KREMLIN",c:"#25303b"}
+                {t:"LE KREMLIN",c:"#25303b"},
+                {t:"PORTE DE",c:"#25303b"},
+                {t:"MAIRIE D’IVRY",c:"#25303b"}
             ],
             bas: [
                 {t:"D’IVRY",c:"#fff200"},
@@ -41,7 +43,8 @@
                 {t:"8 MAI 1945",c:"#25303b"},
                 {t:"ECOLES",c:"#25303b"},
                 {t:"BICETRE",c:"#25303b"},
-                {t:"LES JUILLIOTTES",c:"#fff200"}
+                {t:"LES JUILLIOTTES",c:"#fff200"},
+                {t:"CHARENTON",c:"#25303b"}
             ]
         };
         const difference=girouettes.haut.length-girouettes.bas.length;
