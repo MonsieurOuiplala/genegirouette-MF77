@@ -11,6 +11,7 @@
         <div id="haut" style="padding: 1px; margin: 0; height: 14px; width: 115px; font-size: 16px; font-weight: bold; display: flex; align-items: center; justify-content: center; border: 1px solid black; font-family: 'Courier New', monospace; letter-spacing: -2px;"></div>
         <div id="bas" style="padding: 1px; margin: 0; height: 14px; width: 115px; font-size: 16px; font-weight: bold; display: flex; align-items: center; justify-content: center; border: 1px solid black; border-top: none; font-family: 'Courier New', monospace; letter-spacing: -2px;"></div>
     </div>
+    <p><img id="photo"src="photos/MAIRIE D’IVRY!.jpeg"style="height:150px"></p>
     <script>
         const girouettes={
             haut:[
@@ -66,6 +67,8 @@
             bas.style.backgroundColor=choixBas.c;
             bas.innerHTML=choixBas.t;
             bas.style.color=(choixBas.c==="#25303b")?"white":"black";
+            
+            document.getElementById("photo").src="photos/"+choixHaut.t+"!"+choixBas.t+".jpeg"
         }
 
         genererGirouette();
